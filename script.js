@@ -1,7 +1,7 @@
 const loginBtn = document.querySelector(".login-button");
 
-loginBtn.addEventListener("click", (event) => {
-    get();
+loginBtn.addEventListener("click", async (event) => {
+    await get();
 })
 
 async function get() {
