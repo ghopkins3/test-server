@@ -1,6 +1,8 @@
-const express = require("express");
+import express from "express";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 const PORT = 3000;
 
 app.get("/", (req, res) => {
@@ -17,4 +19,4 @@ app.listen(PORT, (error) => {
     };
 });
 
-module.exports = app;
+export default app;
